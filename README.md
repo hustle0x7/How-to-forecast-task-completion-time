@@ -45,3 +45,73 @@ If we gather the task resolution times over a certain period and mark points on 
   </p>
 
   The graph helps understand that even similar tasks can take a different number of days to complete. A task that took us 3 days to complete yesterday might take longer today when we're in a different mindset, for example, 5 days. Various factors influence task completion. The graph shows that all tasks were resolved within 11 days, with a significant volume of tasks being completed in 8 days, although there is a possibility of completing tasks in just one day.
+
+ ## Predicting task completion times is challenging. Many researchers have attempted to answer the question, "When will tasks be completed?"
+
+Forecasting is difficult, and it's important to acknowledge this fact. Regardless of the approach we try, it is a complex cognitive process that has engaged the minds of many, including Daniel Kahneman, Troy Magennis, Dmitry Bakardzhiev, Stephen McConnell, and others. Numerous books have been dedicated to evaluating intellectual work.
+
+We are not alone, and if we make mistakes in our predictions, it's normal; those who came before us also made errors.
+
+One of the most popular inventions for the IT industry is the use of Story Points for estimation. Ron Jeffries proposed them as an alternative to precise time estimation demanded by managers. Ron devised them for the development process in a framework called XP, and somehow they transitioned into Scrum. Later, he wrote an article apologizing for his invention.
+
+Let's consider examples from two researchers, Mike Cohn and Ajay Reddy, to understand that estimating task completion time is indeed not straightforward.
+
+**The first example** involves Mike Cohn actively promoting an estimation methodology based on Story Points, recommended for assessing tasks and determining their resolution timelines. I'll provide an example from his old book, "Agile Estimating and Planning." To explain the connection between Story Points and task completion time, he suggested the following approach:
+
+<p align="center">
+  <img src="https://i.imgur.com/Uhihs89.png" alt="Alt Text">
+  </p>
+
+  To verify this claim, we can construct such a graph based on the Lead Time distribution for our teams using Story Points. In our company, we conducted this experiment, and here are the results:
+
+  <p align="center">
+  <img src="https://habrastorage.org/r/w1560/getpro/habr/upload_files/de2/f0f/668/de2f0f668ea8aae52800ac5993295664.png" alt="Alt Text">
+  </p>
+  <p align="center">
+  <img src="https://habrastorage.org/r/w1560/getpro/habr/upload_files/a02/015/cf0/a02015cf0826b18dca391fc97c522983.png" alt="Alt Text">
+  </p>
+  <p align="center">
+  <img src="https://habrastorage.org/r/w1560/getpro/habr/upload_files/ae9/5d0/a20/ae95d0a20f8c3c9dd2441cbedf0d026b.png" alt="Alt Text">
+  </p>
+  <p align="center">
+  <img src="https://habrastorage.org/r/w1560/getpro/habr/upload_files/184/fe2/ad7/184fe2ad79c19abcec76a77d0dc9c3fc.png" alt="Alt Text">
+  </p>
+In a simple version, we can represent these distributions in one of the forms of the Weibull distribution, as illustrated in the example with the yellow graph:
+
+  <p align="center">
+  <img src="https://i.imgur.com/WlMUZRa.png" alt="Alt Text">
+  </p>
+
+  As seen from the distribution graphs for Story Points 1, 2, 3, 5, the actual Lead Time, firstly, does not follow a normal distribution pattern as depicted in Mike's book. Secondly, the distribution of Lead Time for tasks with different Story Point estimates appears very similar. In other words, tasks with different Story Point estimates were completed in roughly the same amount of time with minor variations.
+
+I conducted a similar experiment across different teams and found no significant correlation between Story Points estimates and task resolution time.
+
+The question arises: Was Mike Cohn correct?
+
+The unequivocal answer is no. He made a mistake.
+
+**The second example** is Ajay Reddy's approach. He tackled the problem from a different angle in his book "Scrumban [R]Evolution, The: Getting the Most Out of Agile, Scrum, and Lean Kanban (Agile Software Development Series)."
+
+Ajay attempted to create a correlation graph between Story Points and task resolution time to find an optimal formula for Story Points.
+
+  <p align="center">
+  <img src="https://habrastorage.org/r/w1560/getpro/habr/upload_files/5e3/9c5/ad2/5e39c5ad2abe075a0d5468ab02a7dc63.png" alt="Alt Text">
+  </p>
+
+  Within this experiment, Ajay Reddy sought to find which Story Points estimate aligns better with task resolution time. Through the experiment, he identified that using estimates as powers of two results in a more linear correlation, if one exists.
+
+We have constructed graphs for several teams (services) utilizing Story Points for estimation and found a typical pattern:
+
+  <p align="center">
+  <img src="https://habrastorage.org/r/w1560/getpro/habr/upload_files/762/bcd/97a/762bcd97aad0b8f8a7cbde837733803f.png" alt="Alt Text">
+  </p>
+
+  The question arises: how did Ajay conduct his experiment that resulted in some correlation, while we found no correlation at all?
+
+The answer: it's possible that it was an experiment with result fitting or a specific case where correlation appeared.
+
+You are right to question my conclusions. Predictive estimation, as an assessment without feedback based on results analyzed statistically, makes little sense for forecasting timelines. Even in experiments conducted in a gamified form, one can discover that the correlation between task completion time and Story Points estimates or person-hours, or similar methods referred to as predictive estimation, is practically negligible.
+
+One such game we conducted as a workshop together with Evgeny Stepchenko at the Flow Days conference in 2022. It's called NoEstimate. You might try running this workshop to gain a better understanding of the topic.
+
+**Conclusion:** forecasting is challenging, and simple methods for determining task completion time in an intellectual environment may only work as an exception rather than a well-established technique.
