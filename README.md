@@ -115,3 +115,21 @@ You are right to question my conclusions. Predictive estimation, as an assessmen
 One such game we conducted as a workshop together with Evgeny Stepchenko at the Flow Days conference in 2022. It's called NoEstimate. You might try running this workshop to gain a better understanding of the topic.
 
 **Conclusion:** forecasting is challenging, and simple methods for determining task completion time in an intellectual environment may only work as an exception rather than a well-established technique.
+
+## Why tasks are solved differently?
+
+Understanding this question is aided by Dave Snowden and his Cynefin framework. He divides the domain of action into several domains. Depending on the domain, decision-making methodologies for systems, situations, and tasks will differ. One of Dave's main discoveries is the systematization of different types of environments in which your system operates. Different methods of influence and management should be applied in these environments. Dave identifies five main domains: Simple, Complicated, Complex, Chaos, and Confusion.
+
+The framework requires a separate article for a detailed description, so I'll only note that in the realm of intellectual work, we encounter different situations and environments, often dealing with environments in a transitional form. While most project and task assessment methods work well when associated with the Simple and sometimes Complicated domains, many cases require addressing issues in the Complex and Chaos domains.
+
+The same framework suggests trying to understand the situation you are in and transitioning from the Chaos domain to the Simple domain, using methods from the discipline called "Change Management" to simplify the system, including management, and reduce costs by reducing risks.
+
+Another interesting problem is that people tend to simplify the causes of problems and solution methods while making decisions based on their current state, including emotional states. This hinders both a sober assessment of tasks and the erroneous decision-making based on irrelevant experiences. These problems are well discussed in the book "Thinking, Fast and Slow" by Daniel Kahneman.
+
+The complexity of predicting tasks is often explained in a more straightforward way. Imagine that Vasily estimated the task and was in a good mood when he said he would complete it in two hours. However, Peter will start working on the task in a bad mood two weeks after the forecast. After Peter's actions, Katherine will work on the task, determining the quality of the solution. Moreover, the task will wait for the completion of other tasks that Katherine worked on.
+
+How can Vasily's estimate affect the actual completion time? And we haven't even considered that the task estimated by Vasily may be blocked by a solution from another team. Also, Vasily did not anticipate that it would be blocked at the time of forecasting.
+
+Conclusion. To make forecasts, you first need to determine in which situation, system, or domain your system is located. You are almost always in the area of working with risks. To answer the question "When will you complete this task?" we need more information about how the system operates as a whole in its environment.
+
+Is it possible to build a system where accurate forecasts can be given with a high degree of accuracy?
