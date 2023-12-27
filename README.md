@@ -130,6 +130,26 @@ The complexity of predicting tasks is often explained in a more straightforward 
 
 How can Vasily's estimate affect the actual completion time? And we haven't even considered that the task estimated by Vasily may be blocked by a solution from another team. Also, Vasily did not anticipate that it would be blocked at the time of forecasting.
 
+## Why Tasks Are Solved Differently
+
+Understanding this question will benefit us with Dave Snowden and his Cynefin framework. He divides the domain of action into several domains. Depending on the domain, decision-making methodologies for systems, situations, and tasks will differ.
+
+One of Dave's key discoveries is the systematization of different types of environments in which your system operates. Different environments require different methods of influence and management. Dave identifies five main domains: Simple, Complicated, Complex, Chaos, and Confusion.
+
+Describing the framework requires a separate article, so I'll just note that within intellectual work, we often encounter different situations and environments, quite frequently in a transitional form. Most project evaluation and task methods work well when associated with the Simple and sometimes Complicated domains. However, many times, tasks need to be solved in the realm of Complex, Complicated, and sometimes Chaos.
+
+The framework suggests trying to understand your situation and moving from Chaos to Simple using change management methods to simplify the system, including management and cost reduction by reducing risks.
+
+Another interesting problem is that people tend to simplify the causes of problems and methods of solving them while making decisions based on their current state, including emotional state, hindering both a sober assessment of tasks and making mistaken decisions based on irrelevant experience. Daniel Kahneman's book "Thinking, Fast and Slow" delves into such problems.
+
+Often, the complexity of forecasting tasks is explained by a simpler way. Imagine Vasily estimated the task, and he was in a good mood when he said he would complete it in two hours. Peter will start working on the task two weeks after the forecast in a bad mood. After Peter's actions, Catherine will work on the task, determining the quality of the solution, and the task will also wait for the completion of other tasks that Catherine worked on.
+
+How can Vasily's estimate affect the actual completion time? And we haven't even considered that the task estimated by Vasily could be blocked by a solution from another team. Moreover, Vasily did not anticipate that it would be blocked at the time of forecasting.
+
+**Conclusion:** To make forecasts, you first need to determine the situation, the system, the domain in which your system is located. You are almost always in the domain of dealing with risks. To answer the question "When will you complete this task?" we need more information about how the system works as a whole in its environment.
+
+Is it possible to build a system where forecasts can be made with a high degree of accuracy?
+
 Conclusion. To make forecasts, you first need to determine in which situation, system, or domain your system is located. You are almost always in the area of working with risks. To answer the question "When will you complete this task?" we need more information about how the system operates as a whole in its environment.
 
 Is it possible to build a system where accurate forecasts can be given with a high degree of accuracy?
