@@ -153,3 +153,47 @@ Is it possible to build a system where forecasts can be made with a high degree 
 Conclusion. To make forecasts, you first need to determine in which situation, system, or domain your system is located. You are almost always in the area of working with risks. To answer the question "When will you complete this task?" we need more information about how the system operates as a whole in its environment.
 
 Is it possible to build a system where accurate forecasts can be given with a high degree of accuracy?
+
+## How to build a system to consistently meet deadlines?
+
+The process of creating value in IT can be divided into two main stages:
+
+1. **Upstream**: The process of selecting and analyzing tasks that we want to implement.
+2. **Downstream**: The process of developing and delivering value to the client or customer.
+
+It is essential to build and improve any system starting from the end of the process.
+
+Let's focus on Downstream. The Downstream process is managed either by the teams themselves or team leads, sometimes technical leaders.
+
+To establish a process with a predictable deadline for Downstream, the main rule is to impose a limitation on the concurrently tackled work. Techniques such as WIP limits, CONWIP limits can help with this, and if the team is working on different types of tasks, the Capacity Allocation technique can be beneficial.
+
+> For those using Story Points or hour estimation, the WIP limits technique may seem counterintuitive, especially when dealing with tasks of varying complexity. The real challenge lies in understanding that a Sprint is not just a two-week iteration where we pick various tasks. Instead, it is a period during which the entire team collaboratively tackles one goal, referred to as the sprint goal. In many cases, the Sprint process is not necessary for organizations, as both this tool and Scrum itself are highly contextual and closely tied to the Complex domain (per Cynefin). Recommending the game Featureban can enhance understanding of how WIP limits function."
+
+By setting constraints on development, the Downstream process will involve selecting tasks that progress at different speeds due to varying risks and types of work. The limitation on concurrently executed work itself will balance the team's focus.
+
+  <p align="center">
+  <img src="https://habrastorage.org/r/w1560/getpro/habr/upload_files/024/64c/990/02464c990247457f1ab0482ad48ec34f.png" alt="Alt Text">
+  </p>
+  <p align="center">
+  Over time, the team will achieve a balance in the work taken on, ensuring an even mix of complex, long-term tasks and relatively simple, quick tasks. This will result in a consistent delivery of completed work and positively impact overall task resolution times.
+  </p>
+
+ The goal of these activities is to determine the natural constraint on the number of tasks being concurrently addressed in the system for all types, enabling its use in planning.
+
+Key insights into building the Downstream process have been eloquently explained by Alexey Pimenov in his presentation "Harry Team Leads and Modern Management."
+
+**Now, let's focus on the Upstream process.** Project Managers or Product Owners typically oversee this process, answering the question "What exactly needs to be done?"
+
+> Many stages of the Upstream process often hide behind a single term – Backlog. The use of the term Backlog can serve as an indicator of how well the Upstream process is structured. If you find yourself using the term Backlog, there may be room for improvement.
+
+Common problems associated with Upstream include:
+
+1. Lack of dedicated task screening stages — no defined rule funnel.
+2. Development tasks can be taken from any stage by elevating their priority.
+3. Absence of analysis regarding the risks transferred from Upstream to Downstream when priorities change and task screening rules are violated.
+
+A robust Upstream is built using a "rule funnel" to ensure that the number of tasks reaching Downstream is comparable to what Downstream can process. With knowledge of Downstream limitations, we can determine the quantity of tasks to prepare for work. Hence, the formulation of task screening rules from Upstream should retain only those tasks that can be implemented and those needed in the near future. Anything else is discarded.
+
+The role of Upstream is to minimize risks that may pass into the Downstream process. At each stage of Upstream, a set of rules should be in place to mitigate the risk of a task not being completed. For instance, the Definition of Ready – rules formulated in the last stage before Downstream, where we can check for dependencies and ensure clear task formulation.
+
+
